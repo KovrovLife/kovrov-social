@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes bounceIn {
+  0% { transform: translateX(100%); opacity: 0; }
+  70% { transform: translateX(-10px); opacity: 1; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+.animate-bounce-in {
+  animation: bounceIn 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+/* ГЛОБАЛЬНЫЕ СТИЛИ ДЛЯ ТЕМНОЙ ТЕМЫ */
+.dark body {
+  background-color: #0f172a !important; /* Глубокий темный фон */
+  color: #e2e8f0;
+}
+
+/* Карточки и панели */
+.dark .bg-white {
+  background-color: #1e293b !important;
+  border-color: #334155 !important;
+}
+.dark .bg-gray-50 {
+  background-color: #0f172a !important;
+}
+.dark .bg-gray-100 {
+  background-color: #334155 !important;
+}
+
+/* Текст */
+.dark .text-gray-900, .dark .text-gray-800, .dark .text-gray-700, .dark .text-gray-600 {
+  color: #e2e8f0 !important;
+}
+.dark .text-gray-500 {
+  color: #94a3b8 !important;
+}
+
+/* Поля ввода и выпадающие списки */
+.dark input, .dark textarea, .dark select {
+  background-color: #0f172a !important;
+  color: #e2e8f0 !important;
+  border-color: #334155 !important;
+}
+.dark input::placeholder {
+  color: #64748b !important;
+}
+
+/* Ссылки-категории */
+.dark .hover\:bg-gray-50:hover {
+  background-color: #334155 !important;
+}
+
+/* Иконки в шапке */
+.dark header .bg-emerald-600\/30 {
+  background-color: rgba(16, 185, 129, 0.2) !important;
+}
+.dark header .bg-emerald-600\/30:hover {
+  background-color: rgba(16, 185, 129, 0.4) !important;
+}

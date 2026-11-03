@@ -1,0 +1,5 @@
+node_modules
+.next
+app.db
+app.db-*
+.env.local
